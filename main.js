@@ -1056,7 +1056,7 @@ function startMatch() {
 
 // Match CurrrentWord to WordInput
 function matchWords() {
-  if (wordInput.value === currentWord.innerHTML) {
+  if (wordInput.value.toLowerCase() === currentWord.innerHTML) {
     message.innerHTML = "Well Done!!! Correct!";
     message.classList.remove("text-danger");
     message.classList.add("text-success");
